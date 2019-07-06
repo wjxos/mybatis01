@@ -1,7 +1,3 @@
-
-
-
-
 ## mybatis的配置文件
 1. properties 配置
    resource 属性
@@ -56,33 +52,6 @@ keyProperty  赋值给制定的字段
 	key ： param1 ... paramN， 或者参数的索引 
 	命名参数：明确指定封装参数时的map和key @param注解
 3. 传入POJO 对象
-
-4. mybatis 特殊参数处理 
-![](https://github.com/wangjianxiongwjx/mybatis01/blob/master/src/main/img/1562396468.jpg)
-
-5. 参数只获取#{} 和 ${}
-
-	 #{} 预编译的形式放到sql中，防防sql 注入
-	 ${} 将值直接拼接sql，原生jdbc 不支持占位符的地方试用 ${}进行取值
-	 例如： 分表,排序，按年份分表
-	 select * from${}_salary where ....
-	 
-	 #{}更丰富的用法 
-	   规定参数的一个规则
-	 javaType， jdbcType， mode（存储过程），resultMap...
-	 jdbcType: 通常需要在目中特殊的情况下被设置：
-	 在我们数据位null的时候有些数据库可能不能识别mybatis对null的默认处理：例如oracle
-	 #{id, jdbcType=NULL}
-	 由于全局配置中：jdbcTypeForNull=OTHER
-	 <setings>
-	     <string name="jdbcTypeForNull" value="NULL">
-	 </setings>
-	 
-	 
- 
-
-
-
 
 
 	
