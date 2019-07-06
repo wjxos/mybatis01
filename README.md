@@ -8,5 +8,7 @@
    
 3. typeAliases 类型别名: 只能为单个的类起别名
    package可以为整个包下的所有java类起别名， 如果包下面的自包中还有跟父包相同名称的java类 ， 可以使用@Alisa 给指定的java 类起别名
+   
+  ![](https://github.com/wangjianxiongwjx/mybatis01/blob/master/src/main/img/1562387700.jpg)
     
    
