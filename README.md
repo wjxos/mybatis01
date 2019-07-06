@@ -1,3 +1,4 @@
+Dynamic SQL （动态sql）
 
 
 
@@ -48,7 +49,7 @@ useGeneratedKey   相当于jdbc statement.getGenerratedKeys()
 keyProperty  赋值给制定的字段
 
 
-## 参数处理额
+## 参数处理
 
 1. 单个参数 不做特殊处理，#{参数名} 去除参数
 2. 多个参数：
@@ -78,7 +79,30 @@ keyProperty  赋值给制定的字段
 	     <string name="jdbcTypeForNull" value="NULL">
 	 </setings>
 	 
-	 
+mybatis 返回一个Map<Integer, Employee> 键是记录的主键，value是一个对象
+
+	使用@Mapkey("id") 注解 告诉mybatismap的key是主键
+
+resultMap 级联
+
+	1. 级联属性封装结果集 <result columns="did" property="dept.id">
+	2. association 指定这个属性的对象类型
+	<association property="dept" javaType="com.wjx.Dept"> 
+	   <id columns="did" property="id"></id>
+	   <result columns="dname" property="dname"></result>
+	</association>
+	3.分布查询
+	  A.association定义关联对象的封装规则
+	  B.select：表明当前属性是调用select指定的方法查出的结果
+	  C.columns：指定将那一列的值传给这个方法
+
+lazyLoadingEnabled 延迟加载（按需加载）
+
+
+
+
+
+
  
 
 
