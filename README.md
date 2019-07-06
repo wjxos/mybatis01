@@ -1,5 +1,12 @@
-## mybatis 的实现方式
-1. 从 SqlSessionFactory 中获取 SqlSession,通过 SqlSession 实例来直接执行已映射的 SQL 语句
-2. 使用完全限定名调用 Java 对象的方法类似。这样，该命名就可以直接映射到在命名空间中同名的 Mapper 类，并将已映射的 select 语句中的名字、参数和返回类型匹配成方法。
+## mybatis的配置文件
+1. properties 配置
+   resource 属性
 
-优势:首先它不依赖于字符串字面值，会更安全一点； 其次，如果你的 IDE 有代码补全功能，那么代码补全可以帮你快速选择已映射的 SQL 语句。
+2. seting 配置
+
+   mapUnderscoreToCamelCase： 是否开启自动驼峰命名规则（camel case）映射，即从经典数据库列名 A_COLUMN 到经典 Java 属性名 aColumn 的类似映射。 默认false
+   
+3. typeAliases 类型别名: 只能为单个的类起别名
+   package可以为整个包下的所有java类起别名， 如果包下面的自包中还有跟父包相同名称的java类 ， 可以使用@Alisa 给指定的java 类起别名
+    
+   
