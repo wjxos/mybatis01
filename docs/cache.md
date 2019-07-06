@@ -57,6 +57,7 @@
 		statement：可以禁用以及缓存
 
 **Mybatis 缓存图解**
+
 ![](https://github.com/wangjianxiongwjx/mybatis01/blob/master/src/main/img/1562407790.jpg)
 
 	   
