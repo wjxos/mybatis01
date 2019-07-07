@@ -13,6 +13,8 @@ Dynamic SQL （动态sql）
 ## mybatis 工作原理图
 ![](https://github.com/wangjianxiongwjx/mybatis01/blob/master/src/main/img/1562462877.jpg)
 
+![PageHelper](https://github.com/pagehelper/Mybatis-PageHelper/blob/master/README_zh.md)
+
 ## mybatis的配置文件
 1. properties 配置
    resource 属性
