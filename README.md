@@ -1,7 +1,17 @@
 Dynamic SQL （动态sql）
 
+	1.  获取sqlSessionFactory对象
+	    
+	2.  获取sqlSesstion对象
+	3.  获取接口的实现类代理对象（MapperProxy）
+	    getMapper 使用MapperProxyFactory创建一个MapperProxy的代理对象
+	    代理对象包含了DefaultSqlSession（Executor）
+	4.  执增删改查
+	
+	Sta
 
-
+## mybatis 工作原理图
+![](https://github.com/wangjianxiongwjx/mybatis01/blob/master/src/main/img/1562462877.jpg)
 
 ## mybatis的配置文件
 1. properties 配置
